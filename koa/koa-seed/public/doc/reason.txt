@@ -1,0 +1,13 @@
+1、node 7+ 支持启动参数 --harmony-async-await 开启是否启用async await
+
+2、koa-logger 输出日志（控制台中访问日志...）
+
+3、koa-onerror 错误处理
+option:
+  all: if options.all exist, ignore negotiation
+  text: text error handler
+  json: json error handler
+  html: html error handler
+  redirect: if accepct html, can redirect to another error page
+
+4、

@@ -1,0 +1,32 @@
+{
+  "name": "koa",
+  "version": "1.0.0",
+  "description": "node.js with koa2",
+  "keywords": [
+    "node.js",
+    "koa",
+    "carkings"
+  ],
+  "private": true,
+  "dependencies": {
+    "koa": "2.3.0",
+    "koa-router": "7.2.1"
+  },
+  "scripts": {
+    "start": "nodemon ./bin/www"
+  },
+  "engines": {
+    "node": ">=6.0.0"
+  },
+  "author": "carkings.cn",
+  "license": "MIT",
+  "devDependencies": {
+    "koa-bodyparser": "^4.2.0",
+    "koa-ejs": "^4.1.0",
+    "koa-logger": "^3.0.1",
+    "koa-multer": "^1.0.1",
+    "koa-onerror": "^3.1.0",
+    "koa-static": "^4.0.1",
+    "nodemon": "^1.11.0"
+  }
+}
