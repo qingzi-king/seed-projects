@@ -30,6 +30,43 @@ server.on('error', onError);
 server.on('listening', onListening);
 
 /**
+ * [WebSocket description]
+ * @type {[type]}
+ */
+
+const WebSocket = require('ws');
+const wss = new WebSocket.Server({ server });
+
+wss.on('connection', async (ws, req) => {
+
+  ws.on('message', async (message) => {
+    console.log('received: %s', message);
+
+    if(message == 'testing') {
+      await ws.send('哈哈哈哈哈，测试而已...');
+    }
+
+    if(message == 'ok') {
+
+      ws.send('恭喜您答对啦！哈哈哈哈哈，测试而已...');
+
+      // 主动推送消息
+      // var counts = 0;
+      // setInterval(() => {
+      //   ++counts;
+      //   ws.send('恭喜您答对啦！哈哈哈哈哈，测试而已...'+counts);
+      // }, 2000)
+    }
+
+    if(message == 'tct') {
+      await ws.send('恭喜您中啦500万！哈哈哈哈哈，测试而已...');
+    }
+
+  });
+
+});
+
+/**
  * Normalize a port into a number, string, or false.
  */
 

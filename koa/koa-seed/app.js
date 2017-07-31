@@ -5,6 +5,10 @@ const logger = require('koa-logger');
 const onerror = require('koa-onerror');
 const render = require('koa-ejs');
 const path = require('path');
+const cors = require('koa-cors');
+
+// 跨域处理
+app.use(cors());
 
 // 错误处理
 onerror(app);

@@ -78,7 +78,7 @@ const Users = ({ location, dispatch, users, apps, loading }) => {
   return (
     <div style={{width:1024,margin:'10px auto'}}>
 
-      <Spin spinning={users.loading} tip="Loading...">
+      <Spin spinning={users.loading} tip="Loading..." size="large" >
 
         <Link id="to-top" to="/"><Button type="primary">跳转至主页</Button></Link>
         <div className={styles.ck_Lists}>
@@ -94,7 +94,7 @@ const Users = ({ location, dispatch, users, apps, loading }) => {
             '请求已完成！'
         }
 
-        <Affix>
+        <Affix style={{width:100}}>
           <Anchor>
             <AnchorLink href="#to-top" title="回到顶部" />
             <AnchorLink href="#to-bottom" title="回到底部" />

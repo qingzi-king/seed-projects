@@ -36,7 +36,7 @@ const users = {
   effects: {
     *query ({ payload }, { call, put }) {
       yield put({ type: 'showLoading' });
-      const datas = yield call(showProject, 1);
+      const datas = yield call(showProject, 8);
       if (datas.err) {
         console.log('输出：', datas.err);
         yield put({ type: 'hiddenLoading' });

@@ -1,6 +1,6 @@
 {
   "private": true,
-  "version": "0.0.1",
+  "version": "1.0.0",
   "author": "carkings",
   "description": "carkings",
   "scripts": {
@@ -12,12 +12,12 @@
     "install-node": "6.9.2"
   },
   "dependencies": {
-    "antd": "^2.9.1",
-    "antd-mobile": "^1.1.3",
+    "antd": "^2.12.2",
     "babel-plugin-import": "^1.1.1",
     "babel-runtime": "^6.9.2",
     "dva": "^1.2.1",
     "dva-loading": "^0.2.1",
+    "immutable": "^3.8.1",
     "lodash": "^4.17.4",
     "moment": "^2.18.1",
     "rc-queue-anim": "^0.13.3",

@@ -1,2 +1,48 @@
-<center>重庆交控</center>
+<center><%= name %></center>
 <div>This is Koa.js at Carkings!</div>
+
+<script type="text/javascript">
+
+  console.log('测试websocket...')
+
+  var socket = new WebSocket('ws://127.0.0.1:5580/');
+
+  console.log(socket.readyState);
+
+  /**
+   * readyState的值分别对应：
+   *  0 连接尚未建立
+   *  1 ws链接已建立
+   *  2 连接正在关闭
+   *  3 连接已关闭或不可用
+   */
+
+  let type;
+
+  // type = 'testing';
+  type = 'tct';
+  // type = 'ok';
+
+
+  socket.onopen = function(evt) {
+    console.log("连接成功！");
+    socket.send(type);
+  };
+  socket.onclose = function(evt) {
+    console.log("连接关闭！");
+    reconnect(type);
+  };
+  socket.onmessage = function(evt) {
+    console.log(evt.data);
+  };
+  socket.onerror = function(evt) {
+    console.log("连接错误！");
+    reconnect(type);
+  };
+
+  function reconnect(type){
+    console.log('正在尝试重新连接...')
+    socket.send(type);
+  }
+
+</script>

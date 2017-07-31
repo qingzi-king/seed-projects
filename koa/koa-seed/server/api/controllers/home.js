@@ -5,6 +5,12 @@ exports.index = async (ctx, next) => {
   })
 }
 
+exports.demo = async (ctx, next) => {
+  await ctx.render('demo', {
+    name: 'This is Demo page!'
+  })
+}
+
 exports.getDemoRequest = async (ctx, next) => {
   return ctx.body = {
     errcode: 0,

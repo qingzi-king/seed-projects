@@ -15,6 +15,7 @@ const home = require('../controllers/home');
 module.exports = function routes(app) {
 
   app.get('/', home.index);
+  app.get('/demo', home.demo);
   app.get('/api/demo/request', home.getDemoRequest);
   app.post('/api/demo/request', home.postDemoRequest);
   app.post('/api/demo/file', uploadType, home.postDemoFile)
