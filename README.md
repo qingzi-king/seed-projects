@@ -2,8 +2,9 @@
 Here are the front-end and back-end Seed Projects
 
 seed project lists:
-- vue seed
+- vue@2.x seed
 - react seed
-- koa2 seed
+- react dva seed
+- koa@2.x seed
 
 > carkings eidt
