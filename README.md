@@ -6,5 +6,6 @@ seed project lists:
 - react seed
 - react dva seed
 - koa@2.x seed
+- weex@1.1.0-beta.4 demo
 
 > carkings eidt
