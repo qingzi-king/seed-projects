@@ -1,5 +1,5 @@
 {
-  "AppName":"WeexApp",
+  "AppName":"CarkingsApp",
   "AppId":"com.alibaba.weex",
   "SplashText":"Hello\nWeex",
   "WeexBundle":"index.js"
