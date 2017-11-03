@@ -7,5 +7,6 @@ seed project lists:
 - react dva seed
 - koa@2.x seed
 - weex@1.1.0-beta.4 demo
+- react-native@0.49 demo
 
 > carkings eidt
