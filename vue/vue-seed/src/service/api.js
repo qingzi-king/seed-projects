@@ -1,7 +1,6 @@
 import axios from 'axios'
 
 // api 路径
-// const server = 'http://localhost:5581';
 const server = 'http://salesman.cq-tct.com';
 
 export function fetch(url, method = 'GET', params) {
