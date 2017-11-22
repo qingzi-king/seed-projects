@@ -1,15 +1,17 @@
 import axios from 'axios'
 
 // api 路径
-const HOST = 'http://localhost:39999';
+// const server = 'http://localhost:5581';
+const server = 'http://salesman.cq-tct.com';
 
 export function fetch(url, method = 'GET', params) {
+
   return new Promise((resolve, reject) => {
     axios({
       method: method,
-      url: HOST + url,
+      url: server + url,
       headers: {
-        userid: null,
+        authorization: localStorage.getItem('sales_token')
       },
       data: params
     })
@@ -20,7 +22,7 @@ export function fetch(url, method = 'GET', params) {
     })
     .catch((error) => {
 
-      if(error.response.status == 401 || error.response.status == 500) return window.location.href = "/#/401";
+      if(error.response.status == 401 || error.response.status == 500) return alert('系统发生偶然错误！');
 
       reject(error)
     })
@@ -29,13 +31,9 @@ export function fetch(url, method = 'GET', params) {
 
 export default {
 
-  /**
-   * 用户code（微信免登）
-   * @param {any} code
-   * @returns
-   */
-  GetWechatAuth(code) {
-    return fetch('/api/auth?code=' + code, 'GET');
+  // 根据wxId获取用户信息
+  getWechatAuth(wxId) {
+    return fetch('/auth/user/' + wxId)
   }
 
 }
