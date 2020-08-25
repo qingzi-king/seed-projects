@@ -1,0 +1,62 @@
+.d-dropdown-menu-container {
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  ul li {
+    height: 35px;
+    line-height: 35px;
+    padding-left: 40px;
+    padding-right: 15px;
+    border-bottom: 1px solid #F3F5F9;
+    min-width: 150px;
+    cursor: pointer;
+    position: relative;
+    &:last-child {
+      border: none;
+    }
+    &:hover {
+      background-color: #F3F5F9;
+    }
+  }
+  .d-dropdown-icon {
+    position: absolute;
+    left: 15px;
+    top: 10px;
+    color: #7F8692;
+  }
+}
+
+.d-addperson {
+  border: 1px solid #EAEFF4;
+  padding: 15px;
+  background-color: #F3F5F9;
+  border-radius: 15px;
+  animation: heightTransition .8s;
+}
+
+@keyframes heightTransition {
+  0% {
+    height: 0;
+    opacity: 0;
+  }
+
+  25% {
+    opacity: .1;
+  }
+
+  50% {
+    height: auto;
+    opacity: .5;
+  }
+
+  75% {
+    opacity: .8;
+  }
+
+  100% {
+    opacity: 1;
+  }
+
+}
