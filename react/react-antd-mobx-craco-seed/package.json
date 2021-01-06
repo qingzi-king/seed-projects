@@ -43,7 +43,7 @@
     "@ant-design/icons": "4.2.1",
     "antd": "4.4.3",
     "antd-dayjs-webpack-plugin": "1.0.1",
-    "axios": "0.19.2",
+    "axios": "0.21.1",
     "dayjs": "1.8.31",
     "lodash": "4.17.19",
     "mobx": "5.15.4",
