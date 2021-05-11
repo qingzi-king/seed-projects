@@ -45,7 +45,7 @@
     "antd-dayjs-webpack-plugin": "1.0.1",
     "axios": "0.19.2",
     "dayjs": "1.8.31",
-    "lodash": "4.17.19",
+    "lodash": "4.17.21",
     "mobx": "5.15.4",
     "mobx-react": "6.2.3",
     "react-router-dom": "5.2.0"
